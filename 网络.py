@@ -22,13 +22,13 @@ class 网络:
     def 监听插座(self, 插座, 连接数):
         插座.listen(连接数)
 
-    def 连线及地址(self, 插座):
+    def 收连线及地址(self, 插座):
         return 插座.accept()
 
     def 连线超时(self, 连线, 时间):
         连线.settimeout(时间)
 
-    def 连线接收的内容(self, 连线, 缓冲区大小):
+    def 连线收的内容(self, 连线, 缓冲区大小):
         return 连线.recv(缓冲区大小)
 
     def 连线发送(self, 连线, 发送内容):
